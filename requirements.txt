@@ -1,0 +1,4 @@
+pymongo==3.7.2
+flask
+
+# write all the plugins and versions and pycharm will install it for us

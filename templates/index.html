@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <title> sun blog </title>
+  </head>
+  <body>
+
+    <div id="container">
+      <header>
+        <h1>STARTING BLOG</h1>
+        <p>Welcome to the blog of <span >Sun</span></p>
+      </header>
+
+      <div class="wrapper">
+        <main>
+            <article class="box a">
+              <img src="{{ url_for('static', filename='img/woods.jpg') }}" width="100%"/>
+              <div>
+                <h2> {{ result }} </h2>
+                <h3>Title description,<span> April 7, 2014</span></h3>
+                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+              </div>
+              <div>
+                <button> READ MORE >> </button>
+                <label class="rectangle"> 0 </label>
+                <label> Comments</label>
+            </div>
+             </article>
+            <article class="box">
+                <img src="{{ url_for('static', filename='img/bridge.jpg') }}" width="100%"/>
+                <div>
+                  <h2> BLOG ENTRY </h2>
+                  <h3>Title description,<span> April 2, 2014</span></h3>
+                  <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                  <button> READ MORE >> </button>
+                  <label class="circle"> 2 </label>
+                  <label> Comments</label>
+              </div>
+             </article>
+        </main>
+        <aside>
+          <summary class="box">
+              <img src="{{ url_for('static', filename='img/avatar_g.jpg') }}" width="100%"/>
+              <h1>About the blog</h1>
+              <p> This is a project in: mongoDB, python, flask, HTML, CSS, JS, DOM.</br>
+                The blog was made according to an online template website.</br>
+                All the CSS and HTML code was made by me, according to my understanding
+                of the blog elementys i saw.</br>
+                The second step is to add a blog management part with javascript an DOM.</br>
+                The third step is saving the data in mongoDB and accessing with python.
+                </p>
+           </summary>
+          <nav class="box c">
+              <header><p>Popular Posts</p></header>
+              <section>
+                <img src="{{ url_for('static', filename='img/workshop.jpg') }}"/>
+                <p class="title"> Lorem </p>
+                <p class="desc"> Sed mattis nunc </p>
+              </section>
+              <section>
+                <img src="{{ url_for('static', filename='img/gondol.jpg') }}"/>
+                <p class="title"> Ipsum </p>
+                <p> Praes tinci sed </p>
+              </section>
+              <section>
+                <img src="{{ url_for('static', filename='img/skies.jpg') }}"/>
+                <p class="title"> Dorum </p>
+                <p> Ultricies congue </p>
+              </section>
+              <section>
+                <img src="{{ url_for('static', filename='img/rock.jpg') }}"/>
+                <p class="title"> Mingsum </p>
+                <p> Sed mattis nunc </p>
+              </section>
+          </nav>
+          <nav class="box d">
+            <header> Tags </header>
+            <section>
+              <label class="chosen"> Travel </label>
+              <label> New York </label>
+              <label> London </label>
+              <label> IKEA </label>
+              <label> Norway </label>
+              <label> DIY </label>
+              <label> Ideas </label>
+              <label> Baby </label>
+            </section>
+          </nav>
+         </aside>
+      </div>
+
+      <footer>
+        <button type="button" disabled>Previous</button>
+        <button type="button" class="hover">Next>></button>
+        <p>Created by <a href="https://www.linkedin.com/in/sun-bitan-667160106/"
+          target="_blank"> sun bitan </a></p>
+       </footer>
+    </div>
+
+  </body>
+</html>
