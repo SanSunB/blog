@@ -1,8 +1,9 @@
 import pymongo
 import json
-from insert_to_website_from_DB import *
 
-def get_title():
+
+def insert_json():
+    """ Insert a json file to the DB """
     # Set the connection to db
     uri = "mongodb://127.0.0.1:27017"
     client = pymongo.MongoClient(uri)
@@ -15,10 +16,6 @@ def get_title():
     with open('posts.json') as template:
         template_dct = json.load(template)
 
-    #collection.insert(template_dct)
+    collection.insert(template_dct)
 
-    id = "5cb0939271806b6b41599077"
-    post = get_post(collection,id)
 
-    # return only one field from mongo db chosen post
-    return post['title']
